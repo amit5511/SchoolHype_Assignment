@@ -1,0 +1,95 @@
+.contact_container {
+    margin: 6vmax 0;
+    }
+
+.contact_container_left {
+    padding: 3vmax 0 8vmax 12vmax;
+    background-color: #8ab2e8;
+    height: 17vmax;
+}
+
+.contact_form {
+    width: 50vmax;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.08);
+    position: absolute;
+    right: 4vmax;
+    transform: translateY(-25vmax);
+    background-color: white;
+    border-radius: 10px;
+    padding: 2vmax;
+}
+.contact_form>p:first-child{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.5vmax;
+    line-height: 4.5vmax;
+    color: #000000;
+}
+.contact_form>p:nth-child(2){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #828282;
+}
+.contact_form>form>input{
+    background-color: transparent;
+    border: 0px solid;
+    border-bottom: 1px solid gray;
+    width: 70%;
+    font-size: 2.6vmin;
+    margin: .8vmax 0;
+    padding: 5px 0;
+}
+.contact_form>form>input:focus{
+    outline: none;
+}
+.contact_form>form>button{
+    padding: 1vmax 1.5vmax;
+    border-radius: 10px;
+    background-color:  #2F80ED;
+    border: none;
+    color: white;
+    margin-top:1vmax ;
+    cursor: pointer;
+}
+.contact_container_left>div{
+    margin: 4vmax 0;
+    font-size: 3.4vmin;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width:400px){
+    .contact_container {
+        margin: 2vmax 0;
+    }
+    .contact_form{
+        position: static;
+        transform: translateY(0);
+        width: 95vw;
+        padding: 14px 8px;
+    }
+    .contact_form>form>input{
+        width: 100%;
+        font-size: medium;
+        margin: 10px 0;
+    }
+    .contact_form>form>button{
+        padding: 10px 8px;
+        border-radius: 0;
+    }
+    .contact_container_left {
+        padding: 4vmax 0;
+        max-width: 100vw;
+       height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .contact_container_left>div{
+        margin: 1vmax 0;
+        font-size: 2.3vmax;
+    }
+}

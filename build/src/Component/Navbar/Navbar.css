@@ -1,0 +1,122 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.375rem 3vmax ;
+    background-color: black;
+}
+ 
+.nav_middle_component>ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.nav_middle_component>ul>li{
+    list-style: none;
+}
+
+.nav_middle_component>ul>li>a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size:3.9vmin;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0 10px 0 10px;
+}
+
+.nav_logo>a{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:3.9vmin;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav_right_component>a{
+    background: #7CEDA1;
+    border-radius: 10px;  
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size:3.9vmin;
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu_icon{
+    display: none;
+}
+.nav_elements{
+    display: flex;
+}
+#menu_icon{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    #menu_icon{
+        display: block;
+        color: white;
+        position: absolute;
+        right: 2rem;
+    }
+    .active{
+         display: none;
+    }
+    .nav_container{
+       flex-direction: column;
+       height: auto;
+     }
+    .nav_middle_component>ul{
+        flex-direction: column;
+        margin: 4vmax 2vmax;
+     }
+    .nav_middle_component>ul>li{
+        margin: 2vmax 1.5vmax;
+        padding-bottom: 1vmax;
+        border-bottom: 2px solid white;
+        width:fit-content;
+    }
+    .nav_middle_component>ul>li>a{
+      margin: 0;
+      font-size: 4.3vmin;
+    }
+    .nav_right_component>a {
+      font-size:medium;
+      color: black;
+      text-decoration: none;
+      padding: 2vmax;
+    }
+   .border {
+      display: none;
+    }
+   .right_main_conatiner>img {
+      width: 100%;
+      margin-left: 20px;
+   }
+}
+
+@media screen and (max-width:400px) {
+    .nav_container{
+       padding: 10px 8px;
+       }
+    .nav_right_component>a {
+       padding: 1.3vmax;
+   }
+   .border {
+      display: none;
+    }
+   .right_main_conatiner>img {
+      width: 107%;
+      margin-left: -10px;
+      height: 30vh;
+    }
+  .right_main_conatiner{
+    width: auto;
+}
+}
